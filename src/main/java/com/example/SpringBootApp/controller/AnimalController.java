@@ -41,11 +41,7 @@ public class AnimalController {
 
         Optional<Animal> animalData = animalRepo.findById(id);
 
-        if (animalData.isPresent()){
-            return new ResponseEntity<>(animalData.get(), HttpStatus.OK);
-        }
-
-        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        return animalData.map(animal -> new ResponseEntity<>(animal, HttpStatus.OK)).orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
 
 
     }
