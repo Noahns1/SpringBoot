@@ -20,7 +20,7 @@ Languages and Tools:
 
 ---
 ### What Is My Project?
-
+The project entails developing a RESTful API backend using Java SpringBoot and Maven. It revolves around a single table named 'Animals,' with data stored in memory using h2 for a lightweight and easily manageable startup. This setup is primarily employed for conducting unit and API testing purposes.
 
 
 ---
