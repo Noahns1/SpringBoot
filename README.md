@@ -25,17 +25,26 @@ The project entails developing a RESTful API backend using Java SpringBoot and M
 
 ---
 ### Why Is This Project Useful?
-
+With the objective of showcasing my proficiency in Java Spring Boot and my comprehensive understanding of REST APIs, I developed this project. Alongside the implementation of REST API endpoints, I focused on testing various methods such as GET, POST, and DELETE. To ensure the accuracy and functionality of the RESTful API, I utilized JUnit for thorough unit testing and employed Postman for effective verification and testing purposes.
 
 ---
 ### Dependencies
-
+- Springboot
+- Spring Web
+- Spring JPA
+- H2 Database
+- Lombok
+- Maven
+- Junit
 
 ---
 ### How To Use This Project
 
+Assuming that all the necessary dependencies have been downloaded, starting up and testing the application is a straightforward process. To run the Tomcat server, execute the "SpringBootApplication" class. Once the server is up and running, you can access the REST endpoint through a web browser or Postman by navigating to "localhost:9090".
 
+For running the JUnit tests, you can follow these steps:
 
----
-### Scenarios
+1. Go to the following directory: "src > test > java > com.example.SpringBootApp". This is where the testing files are located.
+2. Right-click on the desired test file.
+3. Select "Run" to execute the test cases associated with that file.
 
