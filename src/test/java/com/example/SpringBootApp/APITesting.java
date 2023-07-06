@@ -49,7 +49,7 @@ public class APITesting {
 
     @Test
     @Order(3)
-    public void shouldAllById() throws Exception {
+    public void shouldReadById() throws Exception {
 
         long ID = 1;
 
