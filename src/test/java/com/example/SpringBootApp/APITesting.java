@@ -7,6 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.http.MediaType;
 
+import static org.hamcrest.Matchers.hasSize;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
@@ -33,7 +34,11 @@ public class APITesting {
     }
 
     @Test
-    public void shouldReadAll() {
+    public void shouldReadAll() throws Exception {
+
+        this.mockMvc.perform(get("/getAllAnimals"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$", hasSize(1)));
 
     }
 
