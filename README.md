@@ -48,3 +48,35 @@ For running the JUnit tests, you can follow these steps:
 2. Right-click on the desired test file.
 3. Select "Run" to execute the test cases associated with that file.
 
+### REST API Junit tests
+I have arranged these tests in a specific order to ensure that they can be executed seamlessly and as intended when the system starts up.
+
+Tests:
+
+1. shouldCreate
+   - To transmit JSON data to the API endpoint "/addAnimal," it utilizes the POST method.
+2. shouldReadAll
+   - To verify the functionality of the endpoint, it employs the GET method to check the API endpoint "/getAllAnimals" and verifies that the size is equal to 1.
+3. shouldReadById
+   - By utilizing the GET method, it retrieves the item by its ID from the endpoint "/getAnimalById/{id}".
+4. shouldUpdateById
+   - I utilized the POST method to update the data through the endpoint "/updateAnimalById/{id}".
+5. shouldDelete
+   - I utilized the DELETE method to remove the data through the endpoint "/deleteAnimalById/{id}".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
